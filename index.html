@@ -13,30 +13,30 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0px 0;
-            background-color: #fff; /* White background */
-            text-align: justify; /* justified text */
+            padding: 0;
+            background-color: #fff;
+            text-align: justify;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         .container {
-            width: 80%;
-            max-width: 800px;
+            width: 90%;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0px;
+            padding: 20px;
         }
         header {
-            background: none; /* Remove background */
+            background: none;
             color: #000;
-            padding: 3.33px 0; /* Reduced padding to one-third */
+            padding: 10px 0;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         header img {
-            height: 400px; /* Double the size */
+            height: 200px;
             margin-right: 20px;
         }
         header h1 {
@@ -62,8 +62,8 @@
         }
         .content {
             padding: 20px;
-            background: none; /* Remove background */
-            margin-top: 6.67px; /* Reduced margin to one-third */
+            background: none;
+            margin-top: 20px;
         }
         .content h2, .content h3 {
             color: #333;
@@ -72,7 +72,7 @@
             line-height: 1.6;
         }
         footer {
-            background: none; /* Remove background */
+            background: none;
             color: #000;
             text-align: center;
             padding: 10px;
@@ -81,14 +81,23 @@
         iframe {
             display: block;
             margin: 20px auto;
-            width: 650px;
-            height: 1200px; /* Increased height to show the entire form including its border */
+            width: 100%;
+            max-width: 800px;
+            height: 1200px;
             border: 0;
             box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);
             overflow: hidden;
         }
         .spacer {
-            margin-top: 80px; /* Updated to 80px */
+            margin-top: 80px;
+        }
+        @media (max-width: 768px) {
+            header img {
+                height: 100px;
+            }
+            iframe {
+                height: 800px;
+            }
         }
     </style>
 </head>
@@ -103,15 +112,15 @@
                 <h2>Welcome to Intel Venture Retail Automation & Ygrene Energy Fund collaboration</h2>
                 <p> Intel Venture Retail Automation has partnered with Ygrene Energy Fund to support and provide top-notch automation consultancy services.</p>    
             </section>
-            <div class="spacer"></div> <!-- Added spacer div here -->
+            <div class="spacer"></div>
             <section id="contact">
                 <h3>Join the Ygrene Family</h3>
                 <p>To get started, please fill out our form below:</p>
-                <p>By submitting this form, you agree to our <a href="privacy-policy.html">Privacy Policy</a>.</p> <!-- Added privacy policy link near the form -->
-                <div class="spacer"></div> <!-- Added spacer div here -->
+                <p>By submitting this form, you agree to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+                <div class="spacer"></div>
                 <iframe src="https://forms.monday.com/forms/embed/6007973577296a1310d26d069cc48444?r=use1" width="650" height="1200" style="border: 0; box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);" scrolling="no"></iframe>
             </section>
-            <div class="spacer"></div> <!-- Updated spacer div here -->
+            <div class="spacer"></div>
             <section id="services">
                 <h3>Our Services</h3>
                 <ul>
@@ -137,7 +146,7 @@
         </div>
 
         <footer>
-            <p>Intel Venture Retail Automation &copy; 2022 | <a href="privacy-policy.html">Privacy Policy</a></p> <!-- Added privacy policy link in the footer -->
+            <p>Intel Venture Retail Automation &copy; 2022 | <a href="privacy-policy.html">Privacy Policy</a></p>
         </footer>
     </div>
 </body>
